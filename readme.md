@@ -18,8 +18,9 @@ Install requirements
 
 Run Cli
 
-    python testingonly/cli.py
+    python main.py
 
 Run the Tests
 
-    pytest
+    python -m pytest tests/
+

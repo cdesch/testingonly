@@ -1,4 +1,5 @@
 import pytest
+from testingonly import cli
 from testingonly.mytest import Tester  # Import the Tester Class
 
 # Default tests (test_mytest to test method f) to Ensure Pytest is working (From Docs https://docs.pytest.org/en/6.2.x/getting-started.html)
@@ -11,6 +12,10 @@ def f():
 def test_mytest():
     with pytest.raises(SystemExit):
         f()
+
+
+def test_cli():
+    assert cli.main() == 0
 
 
 def test_tester(capsys):
