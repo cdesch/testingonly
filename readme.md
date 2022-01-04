@@ -23,4 +23,3 @@ Run Cli
 Run the Tests
 
     python -m pytest tests/
-
